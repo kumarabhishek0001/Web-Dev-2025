@@ -1,0 +1,39 @@
+1:18 --> 
+to make it clickable rather than using text use html code
+
+// verify the user
+-> get token from url
+-> validate (find user based on token generated in db)
+-> if not 
+-> set isVerified to true
+-> remove verification token
+-> save and return response
+
+//git saved
+
+
+1:33 -->
+now we cannot store the password without encryption 
+
+//encrypting password --> byycrpt.js
+when to encrypting
+    -> save
+    -> register
+    -> change (resset password)
+mongoose gives hooks
+    -> lot of activity (save, edit)
+
+git saved --> added password encryption.
+
+1:59 user login -->
+
+
+//check email 
+//check password -->
+since it is encrypted(hashed) --> cannot be converted back to orginal so we also need to hash user provided password to make it same and a check 
+
+//session
+user --> let me go to /profile
+when requested by user check the database wheather the db have active token
+
+we also have a stateless login --> JWT
